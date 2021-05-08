@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;700;800&display=swap');
+@import '../../assets/scss/variables';
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: $standard-gutter;
+  padding-left: $standard-gutter;
+  border-left: 1px solid $color-grey;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  flex-grow: 1;
+  flex-basis: 0;
+  position: relative;
+
+  @include phone {
+    font-size: 14px;
+  }
+
+  &:nth-child(1) {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  @include phone {
+    border-left: 0;
+    margin-bottom: $standard-gutter/2;
+    padding-bottom: $standard-gutter/2;
+    border-bottom: 1px solid $color-grey;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .post-header {
+    display: flex;
+    width: 100%;
+    padding-top: 5px;
+
+    .ml-auto {
+      margin-left: auto;
+    }
+
+    .post-title {
+      color: $color-primary;
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 0px;
+      padding-bottom: 10px;
+
+      @include tablet {
+        font-size: 18px;
+      }
+
+      @include phone {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .country-text {
+    padding-left: 10px;
+  }
+
+  .text-light {
+    color: $color-light-black;
+  }
+
+  .post-desc {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .post-details {
+    display: inline-flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 8px 12px;
+    svg {
+      color: #fff;
+    }
+
+    @include phone {
+      bottom: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 3px 17px $color-light-black;
+    }
+  }
+}

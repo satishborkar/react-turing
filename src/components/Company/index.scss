@@ -1,0 +1,73 @@
+@import '../../assets/scss/media-queries';
+@import '../../assets/scss/variables';
+
+.company-container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  width: 140px;
+  max-width: 140px;
+  height: 130px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include phone {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  @include tablet {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .icon-container {
+    width: 90px;
+    height: 90px;
+    border: 1px solid $color-light-black;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: all ease-in 0.3s;
+
+    svg {
+      transition: all ease-in 0.3s;
+    }
+  }
+
+  .name-container {
+    font-size: 20px;
+    font-weight: 800;
+    transition: all ease-in 0.3s;
+
+    @include phone {
+      font-size: 14px;
+    }
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .icon-container {
+      border-color: $color-primary;
+      svg {
+        color: $color-primary;
+      }
+    }
+    .name-container {
+      color: $color-primary;
+    }
+  }
+}

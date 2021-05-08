@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import './assets/scss/reset';
+@import './assets/scss/variables';
+
+.app-wrapper {
+  .mt-10 {
+    margin-top: 10px;
+  }
+  .banner {
+    margin-bottom: $standard-gutter * 2;
+    @include phone {
+      margin-bottom: $standard-gutter;
+    }
+    @include tablet {
+      margin-bottom: $standard-gutter * 2 / 2;
+    }
+  }
+
+  .app-container {
+    width: 80%;
+    margin: 0 10%;
+
+    @include tablet {
+      width: 90%;
+      margin: 0 5%;
+    }
+
+    .section-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: $standard-gutter * 2;
+
+      @include phone {
+        margin-bottom: $standard-gutter * 2 / 2;
+      }
+      @include tablet {
+        margin-bottom: $standard-gutter;
+      }
+    }
+
+    .posts-container {
+      display: flex;
+      flex-direction: row;
+      @include phone {
+        flex-direction: column;
+      }
+    }
+
+    .company-list-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      @include phone {
+        flex-wrap: wrap;
+      }
+      @include tablet {
+        flex-wrap: wrap;
+      }
+    }
+
+    .view-all {
+      display: flex;
+      color: $color-primary;
+      font-weight: 800;
+      cursor: pointer;
+
+      @include phone {
+        display: none;
+      }
+
+      svg {
+        margin-left: 5px;
+        transition: all ease-in 0.2s;
+      }
+      &:hover,
+      &:focus {
+        opacity: 0.8;
+        svg {
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+}

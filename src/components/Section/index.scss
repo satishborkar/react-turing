@@ -1,0 +1,38 @@
+@import '../../assets/scss/media-queries';
+@import '../../assets/scss/variables';
+
+.sub-section-container {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  margin-bottom: $standard-gutter;
+  align-items: center;
+
+  @include tablet {
+    margin-bottom: $standard-gutter/3;
+  }
+
+  @include phone {
+    margin-bottom: $standard-gutter/2;
+  }
+
+  .header {
+    color: #141414;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+    @include tablet {
+      font-size: 25px;
+    }
+
+    @include phone {
+      font-size: 18px;
+    }
+  }
+
+  .child {
+    font-family: 'Poppins', sans-serif;
+    margin-left: auto;
+  }
+}

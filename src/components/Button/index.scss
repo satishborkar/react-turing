@@ -1,0 +1,33 @@
+@import '../../assets/scss/media-queries';
+
+.button-container {
+  background: transparent linear-gradient(90deg, #266efd 0%, #3876f1 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: 0px 3px 17px #3876f194;
+  border-radius: 5px;
+  border: 0;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  padding: 8px 31px;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+
+  @include tablet {
+    font-size: 16px;
+    padding: 7px 15px;
+  }
+
+  @include phone {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 17px #000;
+  }
+
+  &:active {
+    opacity: 0.75;
+  }
+}
