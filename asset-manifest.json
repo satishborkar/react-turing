@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-turing/static/css/main.16cf5d13.chunk.css",
+    "main.js": "/react-turing/static/js/main.3148f588.chunk.js",
+    "main.js.map": "/react-turing/static/js/main.3148f588.chunk.js.map",
+    "runtime-main.js": "/react-turing/static/js/runtime-main.318c8a22.js",
+    "runtime-main.js.map": "/react-turing/static/js/runtime-main.318c8a22.js.map",
+    "static/js/2.487c8e7e.chunk.js": "/react-turing/static/js/2.487c8e7e.chunk.js",
+    "static/js/2.487c8e7e.chunk.js.map": "/react-turing/static/js/2.487c8e7e.chunk.js.map",
+    "static/js/3.25903401.chunk.js": "/react-turing/static/js/3.25903401.chunk.js",
+    "static/js/3.25903401.chunk.js.map": "/react-turing/static/js/3.25903401.chunk.js.map",
+    "index.html": "/react-turing/index.html",
+    "static/css/main.16cf5d13.chunk.css.map": "/react-turing/static/css/main.16cf5d13.chunk.css.map",
+    "static/js/2.487c8e7e.chunk.js.LICENSE.txt": "/react-turing/static/js/2.487c8e7e.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/react-turing/static/media/header.3b72e86b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.318c8a22.js",
+    "static/js/2.487c8e7e.chunk.js",
+    "static/css/main.16cf5d13.chunk.css",
+    "static/js/main.3148f588.chunk.js"
+  ]
+}
