@@ -3,6 +3,7 @@ import cn from 'classnames';
 import './index.scss';
 
 const Section = ({ children, className, header }) => {
+  console.log("Rendering Section.........")
   return (
     <div className={cn('sub-section-container', className)}>
       <div className='header'>{header}</div>

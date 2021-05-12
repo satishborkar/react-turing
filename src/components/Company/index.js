@@ -4,6 +4,7 @@ import './index.scss';
 import { FiBriefcase } from 'react-icons/fi';
 
 const Company = ({ data, className }) => {
+  console.log("Rendering Company.........")
   const { icon, name, details } = data;
   return (
     <div

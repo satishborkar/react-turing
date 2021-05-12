@@ -5,6 +5,8 @@ import './index.scss';
 import Button from '../Button';
 
 const Post = ({ data, className }) => {
+
+  console.log("Rendering Post.........")
   if (!data) {
     return;
   }
